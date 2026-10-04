@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motionzek - Editor de Video Remoto y Motion Designer | Germán Carrillo</title>
+    <meta name="description" content="Editor de video remoto y motion designer con más de 10 años de experiencia. YouTube, Reels, anuncios y motion graphics para marcas y creadores de todo el mundo.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Germán Carrillo - Motionzek">
+
+    <!-- Etiquetas Canonical y Hreflang -->
+    <link rel="canonical" href="https://DOMINIO-DEL-CLIENTE.com/es-index.html">
+    <link rel="alternate" hreflang="en" href="https://DOMINIO-DEL-CLIENTE.com/">
+    <link rel="alternate" hreflang="es" href="https://DOMINIO-DEL-CLIENTE.com/es-index.html">
+    <link rel="alternate" hreflang="x-default" href="https://DOMINIO-DEL-CLIENTE.com/">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Motionzek">
+    <meta property="og:title" content="Motionzek - Editor de Video Remoto y Motion Designer">
+    <meta property="og:description" content="Post-producción audiovisual, animación y edición de alta retención para marcas, agencias y creadores en todo el mundo.">
+    <meta property="og:url" content="https://DOMINIO-DEL-CLIENTE.com/es-index.html">
+    <meta property="og:image" content="https://DOMINIO-DEL-CLIENTE.com/og-image.jpg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:image:alt" content="Germán Carrillo Motionzek Editor de Video y Motion Graphics">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Motionzek - Editor de Video Remoto y Motion Designer">
+    <meta name="twitter:description" content="Edición de video estratégica de alto impacto, animación y post-producción remota global.">
+    <meta name="twitter:image" content="https://DOMINIO-DEL-CLIENTE.com/og-image.jpg">
+
+    <!-- Favicon & Theme Color -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+    <meta name="theme-color" content="#030712">
+
+    <!-- Fuentes y CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Rajdhani:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        /* Nota para producción: Compilar Tailwind CSS vía CLI en lugar de script CDN para máximo rendimiento */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Rajdhani', 'sans-serif'],
+                        display: ['Arvo', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f3ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            accent: '#00f2fe',
+                            neon: '#7928ca',
+                            pink: '#ff0080'
+                        }
+                    },
+                    boxShadow: {
+                        'glow': '0 0 25px -5px rgba(99, 102, 241, 0.4)',
+                        'glow-accent': '0 0 30px -5px rgba(0, 242, 254, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #030712; color: #f3f4f6; font-family: "Rajdhani", sans-serif; font-weight: 400; }
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: "Arvo", serif !important;
+            font-weight: 700 !important;
+        }
+        .font-display .font-normal { font-weight: 700 !important; }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 50%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover { border-color: rgba(99, 102, 241, 0.4); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, ::before, ::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://DOMINIO-DEL-CLIENTE.com/#website",
+          "url": "https://DOMINIO-DEL-CLIENTE.com/",
+          "name": "Motionzek",
+          "description": "Estudio de Post-Producción Remota y Motion Graphics por Germán Carrillo",
+          "inLanguage": "es"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://DOMINIO-DEL-CLIENTE.com/es-index.html#webpage",
+          "url": "https://DOMINIO-DEL-CLIENTE.com/es-index.html",
+          "name": "Motionzek - Editor de Video Remoto y Motion Designer",
+          "isPartOf": { "@id": "https://DOMINIO-DEL-CLIENTE.com/#website" },
+          "datePublished": "2024-01-15T08:00:00+00:00",
+          "dateModified": "2026-10-01T10:00:00+00:00",
+          "inLanguage": "es",
+          "description": "Contrata a Germán Carrillo (Motionzek), editor de video remoto senior con más de 10 años de experiencia en videos para YouTube, Reels virales, motion graphics y anuncios de alta conversión."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://DOMINIO-DEL-CLIENTE.com/#person",
+          "name": "Germán Carrillo",
+          "alternateName": "Motionzek",
+          "jobTitle": "Post-Productor Senior, Editor de Video y Motion Designer",
+          "knowsAbout": [
+            "Edición de Video",
+            "Motion Graphics",
+            "Post-Producción Audiovisual",
+            "Corrección de Color",
+            "Estrategia de Contenido Corto",
+            "Retención en YouTube",
+            "Anuncios de Video de Alta Conversión"
+          ],
+          "knowsLanguage": ["es", "en"],
+          "homeLocation": {
+            "@type": "Place",
+            "name": "Manta, Ecuador"
+          },
+          "sameAs": [
+            "https://instagram.com/motionzek",
+            "https://tiktok.com/@motionzek",
+            "https://youtube.com/@motionzek"
+          ],
+          "worksFor": { "@id": "https://DOMINIO-DEL-CLIENTE.com/#organization" }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://DOMINIO-DEL-CLIENTE.com/#organization",
+          "name": "Motionzek",
+          "url": "https://DOMINIO-DEL-CLIENTE.com/es-index.html",
+          "logo": "https://DOMINIO-DEL-CLIENTE.com/og-image.jpg",
+          "founder": { "@id": "https://DOMINIO-DEL-CLIENTE.com/#person" },
+          "areaServed": "Worldwide",
+          "telephone": "+593963376306",
+          "priceRange": "$$$",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+593963376306",
+            "contactType": "customer service",
+            "availableLanguage": ["Spanish", "English"],
+            "url": "https://wa.me/593963376306"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://DOMINIO-DEL-CLIENTE.com/es-index.html#service-video-editing",
+          "name": "Servicios de Edición de Video Remota y Motion Graphics",
+          "provider": { "@id": "https://DOMINIO-DEL-CLIENTE.com/#organization" },
+          "areaServed": "Worldwide",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Paquetes de Post-Producción de Video",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Video Individual Elite",
+                "price": "250.00",
+                "priceCurrency": "USD",
+                "description": "Post-producción de video individual de alto impacto con edición de ritmo, color DaVinci y diseño de sonido."
+              },
+              {
+                "@type": "Offer",
+                "name": "Pack Creador Viral",
+                "price": "850.00",
+                "priceCurrency": "USD",
+                "description": "Suscripción mensual de 12 videos verticales de alta retención para YouTube Shorts, Reels y TikTok."
+              },
+              {
+                "@type": "Offer",
+                "name": "Pack YouTube y Performance Ads",
+                "price": "1450.00",
+                "priceCurrency": "USD",
+                "description": "4 videos documentales de largo formato para YouTube y 4 anuncios publicitarios enfocados en ventas."
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://DOMINIO-DEL-CLIENTE.com/es-index.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Cuánto cuesta editar un video",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El costo de editar un video depende de la duración, complejidad del metraje, dinamismo y requerimientos de motion graphics. Los proyectos individuales inician desde $250 USD, mientras que los paquetes mensuales de videos cortos parten desde $850 USD. Cada propuesta se cotiza de forma transparente previo al inicio."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Se puede contratar desde otro país",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, el 100% de los clientes trabajan de forma remota desde cualquier país. El proceso se gestiona con comunicación asíncrona, transferencia de archivos en la nube, herramientas de revisión en línea y horarios adaptados a zonas de Estados Unidos, Europa y Latinoamérica."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="font-sans antialiased bg-slate-950 text-slate-100 selection:bg-brand-500 selection:text-white">
+
+    <header id="inicio" class="fixed top-0 left-0 w-full z-40 transition-all duration-300 backdrop-blur-md bg-slate-950/85 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#inicio" class="flex items-center gap-3 group" aria-label="Motionzek Inicio">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-brand-neon to-brand-accent p-[2px] shadow-glow">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center transition group-hover:bg-transparent">
+                        <i class="fa-solid fa-clapperboard text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-white text-lg"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-display text-xl font-extrabold tracking-wider text-white">MOTIONZEK</span>
+                    <span class="block text-[10px] text-brand-accent tracking-widest uppercase font-semibold">Germán Carrillo</span>
+                </div>
+            </a>
+
+            <!-- Navegación Escritorio -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300" aria-label="Navegación Principal">
+                <a href="#sobre-mi" class="hover:text-brand-accent transition">Sobre Mí</a>
+                <a href="#marcas" class="hover:text-brand-accent transition">Marcas</a>
+                <a href="#portfolio" class="hover:text-brand-accent transition">Muestrario</a>
+                <a href="#paquetes" class="hover:text-brand-accent transition">Paquetes</a>
+                <a href="#trayectoria" class="hover:text-brand-accent transition">Experiencia & Tools</a>
+                <a href="#metodologia" class="hover:text-brand-accent transition">Metodología</a>
+                <a href="#faq" class="hover:text-brand-accent transition">Preguntas</a>
+            </nav>
+
+            <!-- Idioma y WhatsApp CTA -->
+            <div class="hidden sm:flex items-center gap-4">
+                <div class="flex items-center bg-slate-900 border border-slate-800 rounded-lg p-1 text-xs font-bold">
+                    <a href="index.html" hreflang="en" lang="en" class="px-2 py-1 rounded text-slate-400 hover:text-white transition">EN</a>
+                    <span class="px-2 py-1 rounded bg-brand-600 text-white">ES</span>
+                </div>
+                <a id="nav-wsp-btn" href="https://wa.me/593963376306" target="_blank" rel="noopener" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold text-xs sm:text-sm hover:scale-105 transition flex items-center gap-2 shadow-lg shadow-emerald-950/40">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Conversar por WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Botón Menú Móvil -->
+            <div class="flex items-center gap-2 lg:hidden">
+                <div class="flex items-center bg-slate-900 border border-slate-800 rounded-lg p-1 text-xs font-bold mr-2">
+                    <a href="index.html" hreflang="en" lang="en" class="px-2 py-0.5 rounded text-slate-400 hover:text-white transition">EN</a>
+                    <span class="px-2 py-0.5 rounded bg-brand-600 text-white">ES</span>
+                </div>
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="p-2.5 text-slate-300 hover:text-white rounded-lg bg-slate-900 border border-slate-800" aria-label="Abrir Menú de Navegación">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-950 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#sobre-mi" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-brand-accent font-medium">Sobre Mí</a>
+            <a href="#marcas" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-brand-accent font-medium">Marcas</a>
+            <a href="#portfolio" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-brand-accent font-medium">Muestrario</a>
+            <a href="#paquetes" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-brand-accent font-medium">Paquetes</a>
+            <a href="#trayectoria" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-brand-accent font-medium">Experiencia & Tools</a>
+            <a href="#metodologia" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-brand-accent font-medium">Metodología</a>
+            <a href="#faq" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-brand-accent font-medium">Preguntas</a>
+            <a id="mobile-wsp-btn" href="https://wa.me/593963376306" target="_blank" rel="noopener" class="w-full py-3 rounded-xl bg-emerald-500 text-white font-bold text-center block flex items-center justify-center gap-2 mt-4">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Contactar por WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-grid-pattern">
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-600/20 rounded-full blur-[140px] pointer-events-none"></div>
+            <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-brand-accent/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <!-- Insignia -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs font-semibold text-brand-accent mb-8 border border-brand-500/30 shadow-glow">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span>+10 Años de Experiencia • Post-Producción 100% Remota Global</span>
+                    </div>
+
+                    <!-- Titular Principal -->
+                    <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+                        Videos que enganchan, <br class="hidden sm:inline">
+                        <span class="text-gradient">retienen y convierten.</span>
+                    </h1>
+
+                    <!-- Subtítulo -->
+                    <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed mb-10 max-w-2xl mx-auto">
+                        Soy <strong class="text-white">Germán Carrillo (Motionzek)</strong>. Post-productor, editor senior y especialista en Motion Graphics. Creo contenido audiovisual estratégico para creadores, marcas y agencias que exigen resultados.
+                    </p>
+
+                    <!-- Botones de Acción -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                        <a id="hero-quote-btn" href="https://wa.me/593963376306" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-base shadow-xl shadow-emerald-600/20 hover:scale-105 transition flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Cotizar Proyecto por WhatsApp</span>
+                        </a>
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-white font-semibold text-base hover:bg-slate-800/80 transition flex items-center justify-center gap-2 border border-slate-700">
+                            <i class="fa-solid fa-play text-brand-accent"></i>
+                            <span>Ver Demo & Trabajos</span>
+                        </a>
+                    </div>
+
+                    <!-- Indicadores de Confianza -->
+                    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-slate-800/80 pt-10">
+                        <!-- EJEMPLO: REEMPLAZAR CON DATOS REALES -->
+                        <div>
+                            <p class="font-display text-3xl sm:text-4xl font-extrabold text-white">+10 Años</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Trayectoria profesional</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-3xl sm:text-4xl font-extrabold text-brand-accent">+500</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Videos editados y animados</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-3xl sm:text-4xl font-extrabold text-emerald-400">100%</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Flujo asíncrono remoto</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-3xl sm:text-4xl font-extrabold text-purple-400">Global</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Cobertura EE.UU., Europa y LATAM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="py-20 bg-slate-900/40 border-y border-slate-800/80" aria-labelledby="about-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden border-brand-500/20">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                        <div class="relative aspect-square rounded-2xl overflow-hidden border border-slate-700 bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x800/0f172a/00f2fe?text=Germ%C3%A1n+Carrillo';" 
+                                 alt="Germán Carrillo Editor de Video Motionzek" 
+                                 width="800" height="800" 
+                                 fetchpriority="high"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:col-span-2 space-y-4">
+                            <span class="text-brand-accent font-semibold text-xs uppercase tracking-widest">Quién es Germán Carrillo</span>
+                            <h2 id="about-heading" class="font-display text-2xl sm:text-4xl font-extrabold text-white">
+                                Post-Productor Senior, Editor de Video Remoto y Motion Designer
+                            </h2>
+                            <p class="text-slate-300 text-base leading-relaxed">
+                                Germán Carrillo (operando bajo la marca de estudio <strong>Motionzek</strong>) es un post-productor profesional, editor de video y diseñador de motion graphics con más de 10 años de trayectoria en la industria audiovisual. Ofrece un servicio 100% remoto a nivel global para creadores de YouTube, agencias de marketing, empresas B2B y tiendas e-commerce en Estados Unidos, Europa y Latinoamérica.
+                            </p>
+                            <p class="text-slate-300 text-base leading-relaxed">
+                                Con dominio fluido de español e inglés, Germán ejecuta post-producción integral que abarca edición narrativa de alta retención, diseño de animación 2D/3D, etalonaje de color en DaVinci Resolve, diseño sonoro quirúrgico y variaciones de anuncios de video direct response.
+                            </p>
+                            <div class="pt-4 flex flex-wrap gap-3">
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300"><i class="fa-solid fa-earth-americas text-brand-accent mr-1.5"></i>100% Remoto Global</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300"><i class="fa-solid fa-language text-emerald-400 mr-1.5"></i>Español e Inglés Bilingüe</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300"><i class="fa-solid fa-clock text-purple-400 mr-1.5"></i>Horarios Flexibles (EST, PST, CET)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="marcas" class="py-14 bg-slate-950 border-b border-slate-800/60" aria-labelledby="brands-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <p id="brands-heading" class="text-center text-xs uppercase tracking-widest font-bold text-slate-400 mb-8">
+                    <!-- EJEMPLO: REEMPLAZAR CON MARCAS REALES -->
+                    Agencias, Startups, Creadores de Podcast y Marcas E-Commerce que confían en Motionzek
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center opacity-85">
+                    <!-- TARJETAS DE EJEMPLO GENÉRICAS -->
+                    <div class="glass-card p-4 rounded-xl text-center border-slate-800">
+                        <span class="font-display text-sm font-bold text-slate-300"><i class="fa-solid fa-bolt text-amber-400 mr-2"></i>Fintech Global</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl text-center border-slate-800">
+                        <span class="font-display text-sm font-bold text-slate-300"><i class="fa-solid fa-crown text-purple-400 mr-2"></i>Lumen Media</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl text-center border-slate-800">
+                        <span class="font-display text-sm font-bold text-slate-300"><i class="fa-solid fa-rocket text-brand-accent mr-2"></i>Growth Ads Studio</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl text-center border-slate-800">
+                        <span class="font-display text-sm font-bold text-slate-300"><i class="fa-solid fa-microphone text-emerald-400 mr-2"></i>Apex Podcast</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl text-center border-slate-800">
+                        <span class="font-display text-sm font-bold text-slate-300"><i class="fa-solid fa-gem text-pink-400 mr-2"></i>SaaS Enterprise</span>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl text-center border-slate-800">
+                        <span class="font-display text-sm font-bold text-slate-300"><i class="fa-solid fa-layer-group text-blue-400 mr-2"></i>Direct Brand Co</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-24 relative" aria-labelledby="portfolio-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-brand-accent font-semibold text-sm uppercase tracking-wider">Portafolio Seleccionado</span>
+                        <h2 id="portfolio-heading" class="font-display text-3xl sm:text-5xl font-extrabold text-white mt-2">Muestrario de Proyectos</h2>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
+                        Filtra por formato para ver ejemplos reales de post-producción, animación 2D/3D, retención para YouTube y anuncios de alto rendimiento.
+                    </p>
+                </div>
+
+                <!-- Botones de Filtro -->
+                <div class="flex flex-wrap items-center gap-2 w-full pb-4 mb-10 border-b border-slate-800">
+                    <button onclick="filterPortfolio('all')" class="filter-btn active px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap bg-brand-600 text-white shadow-glow transition" data-filter="all">Todos los Trabajos</button>
+                    <button onclick="filterPortfolio('short-form')" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition" data-filter="short-form"><i class="fa-solid fa-mobile-screen mr-2 text-pink-500"></i>Short Form (Reels/TikTok/Shorts)</button>
+                    <button onclick="filterPortfolio('long-form')" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition" data-filter="long-form"><i class="fa-solid fa-film mr-2 text-indigo-400"></i>Long Form</button>
+                    <button onclick="filterPortfolio('institutional')" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition" data-filter="institutional"><i class="fa-solid fa-building mr-2 text-blue-400"></i>Institucional & Corporativo</button>
+                    <button onclick="filterPortfolio('youtube')" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition" data-filter="youtube"><i class="fa-brands fa-youtube mr-2 text-red-500"></i>YouTube</button>
+                    <button onclick="filterPortfolio('ads')" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition" data-filter="ads"><i class="fa-solid fa-bullhorn mr-2 text-emerald-400"></i>Ads & Anuncios</button>
+                    <button onclick="filterPortfolio('motion')" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition" data-filter="motion"><i class="fa-solid fa-wand-magic-sparkles mr-2 text-amber-400"></i>Motion Graphics</button>
+                </div>
+
+                <!-- Rejilla de Trabajos -->
+                <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Proyecto 1 -->
+                    <article class="portfolio-item glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] transition-all duration-300" data-category="short-form ads">
+                        <div class="relative aspect-video overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0f172a/ff0080?text=Edicion+Short+Form';"
+                                 alt="Campañas Reels Virales para Marca Fitness" width="800" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-pink-500/90 text-white text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-md">Short Form / Reel</span>
+                            <button onclick="openVideoModal('Campañas Reels Virales para Marca Fitness', 'Edición acelerada con subtítulos dinámicos estilo Hormozi, sound design inmersivo y ganchos visuales optimizados para superar el 80% de retención.', 'dQw4w9WgXcQ', 'pending')" 
+                                    class="absolute inset-0 flex items-center justify-center bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300" aria-label="Ver vista previa de video">
+                                <div class="w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center shadow-glow text-xl"><i class="fa-solid fa-play ml-1"></i></div>
+                            </button>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white group-hover:text-brand-accent transition">Campañas Reels Virales Fitness</h3>
+                            <p class="text-slate-400 text-sm mt-2 line-clamp-2">Edición de dinamismo extremo, corrección de color punchy y sound design quirúrgico para retención masiva.</p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-xs text-slate-500 font-medium">Reels • Subtítulos • SFX</span>
+                                <a href="https://wa.me/593963376306" onclick="openWspWithContext('Campañas Reels Virales Fitness'); return false;" class="text-emerald-400 hover:text-emerald-300 text-xs font-bold flex items-center gap-1">Cotizar similar <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="portfolio-item glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] transition-all duration-300" data-category="institutional long-form">
+                        <div class="relative aspect-video overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0f172a/00f2fe?text=Video+Institucional';"
+                                 alt="Video Corporativo e Institucional Tech" width="800" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-blue-600/90 text-white text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-md">Institucional</span>
+                            <button onclick="openVideoModal('Video Corporativo e Institucional Tech', 'Tratamiento de color cinematográfico en DaVinci Resolve, limpieza de audio con iZotope RX y animaciones corporativas en 3D.', 'dQw4w9WgXcQ', 'pending')" 
+                                    class="absolute inset-0 flex items-center justify-center bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300" aria-label="Ver vista previa de video">
+                                <div class="w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center shadow-glow text-xl"><i class="fa-solid fa-play ml-1"></i></div>
+                            </button>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white group-hover:text-brand-accent transition">Video Corporativo e Institucional Tech</h3>
+                            <p class="text-slate-400 text-sm mt-2 line-clamp-2">Tratamiento cinematográfico, locución profesional sincronizada y gráficos corporativos elegantes.</p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-xs text-slate-500 font-medium">DaVinci Resolve • 4K • Color Grading</span>
+                                <a href="https://wa.me/593963376306" onclick="openWspWithContext('Video Corporativo Institucional'); return false;" class="text-emerald-400 hover:text-emerald-300 text-xs font-bold flex items-center gap-1">Cotizar similar <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="portfolio-item glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] transition-all duration-300" data-category="youtube long-form">
+                        <div class="relative aspect-video overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0f172a/ff0000?text=Documental+YouTube';"
+                                 alt="Documental de Historia Tech para YouTube" width="800" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-red-600/90 text-white text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-md">YouTube Long Form</span>
+                            <button onclick="openVideoModal('Documental de Historia Tech para YouTube', 'Edición de largo formato con narrativa visual avanzada, B-roll estratégico y gráficos explicativos en After Effects para sostener el 55%+ de retención.', 'dQw4w9WgXcQ', 'pending')" 
+                                    class="absolute inset-0 flex items-center justify-center bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300" aria-label="Ver vista previa de video">
+                                <div class="w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center shadow-glow text-xl"><i class="fa-solid fa-play ml-1"></i></div>
+                            </button>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white group-hover:text-brand-accent transition">Documental Tech para YouTube</h3>
+                            <p class="text-slate-400 text-sm mt-2 line-clamp-2">Storytelling visual enfocado en sostener la curva de atención por encima de 12 minutos.</p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-xs text-slate-500 font-medium">Storytelling • Motion 2D • B-Roll</span>
+                                <a href="https://wa.me/593963376306" onclick="openWspWithContext('Documental Tech para YouTube'); return false;" class="text-emerald-400 hover:text-emerald-300 text-xs font-bold flex items-center gap-1">Cotizar similar <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4 -->
+                    <article class="portfolio-item glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] transition-all duration-300" data-category="ads short-form">
+                        <div class="relative aspect-video overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0f172a/10b981?text=Anuncio+Performance';"
+                                 alt="Video Ad Direct Response para SaaS" width="800" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-emerald-600/90 text-white text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-md">Performance Ad</span>
+                            <button onclick="openVideoModal('Anuncio Direct Response para SaaS', 'Spot publicitario optimizado para Meta y TikTok Ads con 3 variaciones de ganchos (hooks) para pruebas A/B.', 'dQw4w9WgXcQ', 'pending')" 
+                                    class="absolute inset-0 flex items-center justify-center bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300" aria-label="Ver vista previa de video">
+                                <div class="w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center shadow-glow text-xl"><i class="fa-solid fa-play ml-1"></i></div>
+                            </button>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white group-hover:text-brand-accent transition">Video Ad Direct Response para SaaS</h3>
+                            <p class="text-slate-400 text-sm mt-2 line-clamp-2">Anuncio diseñado para detener el scroll en los primeros 2 segundos y disparar el CTR.</p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-xs text-slate-500 font-medium">Meta Ads • UGC • Alto CTR</span>
+                                <a href="https://wa.me/593963376306" onclick="openWspWithContext('Anuncio Direct Response SaaS'); return false;" class="text-emerald-400 hover:text-emerald-300 text-xs font-bold flex items-center gap-1">Cotizar similar <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 5 -->
+                    <article class="portfolio-item glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] transition-all duration-300" data-category="motion institutional">
+                        <div class="relative aspect-video overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0f172a/f59e0b?text=Explicativo+3D';"
+                                 alt="Video Explicativo de Producto con Motion Graphics 3D" width="800" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-amber-500/90 text-slate-950 text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-md">Motion Graphics</span>
+                            <button onclick="openVideoModal('Video Explicativo de Producto 3D', 'Animación gráfica fluida con renderizado 3D en Cinema 4D e integración en After Effects.', 'dQw4w9WgXcQ', 'pending')" 
+                                    class="absolute inset-0 flex items-center justify-center bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300" aria-label="Ver vista previa de video">
+                                <div class="w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center shadow-glow text-xl"><i class="fa-solid fa-play ml-1"></i></div>
+                            </button>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white group-hover:text-brand-accent transition">Video Explicativo 3D de Producto</h3>
+                            <p class="text-slate-400 text-sm mt-2 line-clamp-2">Explicación abstracta de software y tecnología transformada en animación 2D/3D clara y memorable.</p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-xs text-slate-500 font-medium">After Effects • Cinema 4D • VFX</span>
+                                <a href="https://wa.me/593963376306" onclick="openWspWithContext('Video Explicativo 3D'); return false;" class="text-emerald-400 hover:text-emerald-300 text-xs font-bold flex items-center gap-1">Cotizar similar <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 6 -->
+                    <article class="portfolio-item glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] transition-all duration-300" data-category="short-form youtube">
+                        <div class="relative aspect-video overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0f172a/7928ca?text=Cortes+Podcast';"
+                                 alt="Cortes de Podcast Multicámara y Microcontenido" width="800" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-purple-600/90 text-white text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-md">Podcast Clips</span>
+                            <button onclick="openVideoModal('Cortes de Podcast Multicámara', 'Reutilización de episodios largos transformados en micro-piezas virales con montaje dinámico multicámara y B-roll.', 'dQw4w9WgXcQ', 'pending')" 
+                                    class="absolute inset-0 flex items-center justify-center bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300" aria-label="Ver vista previa de video">
+                                <div class="w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center shadow-glow text-xl"><i class="fa-solid fa-play ml-1"></i></div>
+                            </button>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white group-hover:text-brand-accent transition">Cortes de Podcast Multicámara</h3>
+                            <p class="text-slate-400 text-sm mt-2 line-clamp-2">Adaptación de entrevistas y conferencias en contenido corto de alto dinamismo para Reels y TikTok.</p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-xs text-slate-500 font-medium">Multicámara • B-Roll • Subtítulos</span>
+                                <a href="https://wa.me/593963376306" onclick="openWspWithContext('Cortes de Podcast'); return false;" class="text-emerald-400 hover:text-emerald-300 text-xs font-bold flex items-center gap-1">Cotizar similar <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="paquetes" class="py-24 bg-slate-900/40 border-t border-slate-800/80" aria-labelledby="pricing-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-emerald-400 font-semibold text-sm uppercase tracking-wider">Inversión Transparente</span>
+                    <h2 id="pricing-heading" class="font-display text-3xl sm:text-5xl font-extrabold text-white mt-2">Planes Diseñados para Escalar</h2>
+                    <p class="text-slate-400 text-base mt-4">
+                        Selecciona el paquete ideal para tu negocio o canal. Cada plan incluye post-producción profesional, etalonaje de color y sound design.
+                    </p>
+                </div>
+
+                <!-- 3 Tarjetas de Paquetes -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    
+                    <!-- Paquete 1 -->
+                    <div class="glass-card rounded-3xl p-8 flex flex-col justify-between relative hover:border-slate-600 transition">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Proyecto Puntual</span>
+                            <h3 class="font-display text-2xl font-bold text-white mt-2">Video Individual Elite</h3>
+                            <p class="text-slate-400 text-sm mt-2">Ideal para anuncios corporativos, spots principales o un video clave de marca.</p>
+                            
+                            <!-- EJEMPLO: PRECIO EDITABLE -->
+                            <div class="my-6">
+                                <span class="text-slate-400 text-xs block">Cotización desde</span>
+                                <span class="font-display text-3xl font-extrabold text-white">$250 <span class="text-sm font-normal text-slate-400">USD</span></span>
+                            </div>
+
+                            <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400"></i><span>Hasta 3 minutos de video editado</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400"></i><span>Corrección de color DaVinci Resolve</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400"></i><span>Diseño sonoro y ecualización</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400"></i><span>Motion graphics básicos y titulación</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400"></i><span>2 rondas de revisión en Frame.io</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/593963376306" onclick="openWspWithContext('Video Individual Elite'); return false;" class="mt-8 w-full py-3.5 px-4 rounded-xl glass-card text-white font-bold hover:bg-slate-800 transition flex items-center justify-center gap-2 border border-slate-700">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                            <span>Cotizar Video Individual</span>
+                        </a>
+                    </div>
+
+                    <!-- Paquete 2 (Destacado) -->
+                    <div class="glass-card rounded-3xl p-8 flex flex-col justify-between relative border-2 border-brand-500 shadow-glow bg-slate-900/90 transform md:-translate-y-3">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-600 to-brand-accent text-white text-xs font-black uppercase tracking-wider px-4 py-1 rounded-full shadow-lg">
+                            Más Solicitado por Creadores
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-brand-accent uppercase tracking-widest">Retainer de Crecimiento</span>
+                            <h3 class="font-display text-2xl font-bold text-white mt-2">Pack Creador Viral</h3>
+                            <p class="text-slate-400 text-sm mt-2">12 videos verticales mensuales para TikTok, Reels y Shorts.</p>
+                            
+                            <!-- EJEMPLO: PRECIO EDITABLE -->
+                            <div class="my-6">
+                                <span class="text-slate-400 text-xs block">Suscripción Mensual</span>
+                                <span class="font-display text-3xl font-extrabold text-white">$850 <span class="text-sm font-normal text-slate-400">USD/mes</span></span>
+                            </div>
+
+                            <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-accent"></i><span><strong>12 Videos Cortos Verticales</strong></span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-accent"></i><span>Ganchos iniciales de 3 segundos</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-accent"></i><span>Subtítulos dinámicos estilo Hormozi</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-accent"></i><span>Efectos de sonido (SFX) + memes</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-accent"></i><span>Entrega progresiva semanal</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/593963376306" onclick="openWspWithContext('Pack Creador Viral Retainer'); return false;" class="mt-8 w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold hover:scale-[1.02] transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/40">
+                            <i class="fa-brands fa-whatsapp text-white text-lg"></i>
+                            <span>Obtener Pack Creador</span>
+                        </a>
+                    </div>
+
+                    <!-- Paquete 3 -->
+                    <div class="glass-card rounded-3xl p-8 flex flex-col justify-between relative hover:border-slate-600 transition">
+                        <div>
+                            <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">Marcas & Embudos</span>
+                            <h3 class="font-display text-2xl font-bold text-white mt-2">YouTube & Performance Ads</h3>
+                            <p class="text-slate-400 text-sm mt-2">Crecimiento integral de canal y anuncios de alta conversión.</p>
+                            
+                            <!-- EJEMPLO: PRECIO EDITABLE -->
+                            <div class="my-6">
+                                <span class="text-slate-400 text-xs block">Cotización desde</span>
+                                <span class="font-display text-3xl font-extrabold text-white">$1,450 <span class="text-sm font-normal text-slate-400">USD</span></span>
+                            </div>
+
+                            <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-purple-400"></i><span><strong>4 Videos YouTube</strong> (10-15 min)</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-purple-400"></i><span><strong>4 Anuncios Publicitarios</strong> con pruebas de hook</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-purple-400"></i><span>Motion Graphics avanzados 2D/3D</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-purple-400"></i><span>Diseño de miniaturas (Thumbnails) de alto CTR</span></li>
+                                <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-purple-400"></i><span>Canal prioritario de comunicación en Slack</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/593963376306" onclick="openWspWithContext('YouTube and Ads Scaling Pack'); return false;" class="mt-8 w-full py-3.5 px-4 rounded-xl glass-card text-white font-bold hover:bg-slate-800 transition flex items-center justify-center gap-2 border border-slate-700">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                            <span>Cotizar Pack Marcas</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Tabla Comparativa de Paquetes -->
+                <div class="glass-card rounded-2xl overflow-hidden border-slate-800">
+                    <div class="p-6 bg-slate-900/60 border-b border-slate-800">
+                        <h3 class="font-display text-xl font-bold text-white">Matriz Comparativa de Servicios</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-sm text-slate-300">
+                            <thead class="bg-slate-950 text-slate-400 text-xs uppercase font-bold border-b border-slate-800">
+                                <tr>
+                                    <th class="py-4 px-6">Característica</th>
+                                    <th class="py-4 px-6">Elite Individual</th>
+                                    <th class="py-4 px-6 text-brand-accent">Pack Creador Viral</th>
+                                    <th class="py-4 px-6">YouTube & Ads Scaling</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-800">
+                                <tr>
+                                    <td class="py-4 px-6 font-semibold text-white">Ideal Para</td>
+                                    <td class="py-4 px-6">Anuncios y videos de marca puntuales</td>
+                                    <td class="py-4 px-6">Creadores de TikTok, Reels y Shorts</td>
+                                    <td class="py-4 px-6">Empresas SaaS, E-commerce y Canales</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-6 font-semibold text-white">Entregables</td>
+                                    <td class="py-4 px-6">1 Video Master</td>
+                                    <td class="py-4 px-6">12 Videos Cortos Verticales</td>
+                                    <td class="py-4 px-6">4 Videos Largos + 4 Anuncios</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-6 font-semibold text-white">Tiempo de Entrega</td>
+                                    <td class="py-4 px-6">3 a 5 días laborables</td>
+                                    <td class="py-4 px-6">Entrega progresiva semanal</td>
+                                    <td class="py-4 px-6">10 a 14 días laborables</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-6 font-semibold text-white">Motion Graphics</td>
+                                    <td class="py-4 px-6">Titulación 2D Básica</td>
+                                    <td class="py-4 px-6">Subtítulos Dinámicos e Iconos</td>
+                                    <td class="py-4 px-6">Animación 2D/3D y VFX Avanzado</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-6 font-semibold text-white">Revisiones Incluidas</td>
+                                    <td class="py-4 px-6">2 Rondas</td>
+                                    <td class="py-4 px-6">Ajustes menores ilimitados</td>
+                                    <td class="py-4 px-6">3 Rondas por video</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-24 relative bg-grid-pattern" aria-labelledby="contact-heading">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card rounded-3xl p-8 sm:p-12 border-2 border-brand-500/30">
+                    <div class="text-center mb-10">
+                        <span class="text-emerald-400 font-semibold text-sm uppercase tracking-wider">Inicia Tu Proyecto</span>
+                        <h2 id="contact-heading" class="font-display text-3xl sm:text-4xl font-extrabold text-white mt-2">Cotiza por WhatsApp</h2>
+                        <p class="text-slate-400 text-sm mt-2">Hablemos de tu negocio y de lo que quieres lograr con tus videos.</p>
+                    </div>
+
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="form-name" class="block text-xs font-bold text-slate-300 uppercase mb-2">Tu Nombre *</label>
+                                <input type="text" id="form-name" required placeholder="Ej. Carlos Mendoza" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:border-brand-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="form-country" class="block text-xs font-bold text-slate-300 uppercase mb-2">Tu País / Ubicación *</label>
+                                <input type="text" id="form-country" required placeholder="Ej. México, Estados Unidos, España" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:border-brand-500 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="form-service" class="block text-xs font-bold text-slate-300 uppercase mb-2">Servicio o Paquete *</label>
+                                <select id="form-service" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:border-brand-500 focus:outline-none">
+                                    <option value="Pack Creador Viral (Reels/Shorts)">Pack Creador Viral (Reels/Shorts)</option>
+                                    <option value="Video Individual Elite">Video Individual Elite</option>
+                                    <option value="YouTube y Performance Ads Scaling">YouTube y Performance Ads Scaling</option>
+                                    <option value="Motion Graphics y Explicativo 3D">Motion Graphics y Explicativo 3D</option>
+                                    <option value="Proyecto Personalizado">Proyecto Personalizado</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="form-timezone" class="block text-xs font-bold text-slate-300 uppercase mb-2">Zona Horaria Preferida *</label>
+                                <input type="text" id="form-timezone" required placeholder="Ej. GMT-5 / EST / CET" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:border-brand-500 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="form-message" class="block text-xs font-bold text-slate-300 uppercase mb-2">Mensaje o Detalle del Proyecto (Opcional)</label>
+                            <textarea id="form-message" rows="3" placeholder="Cuéntame sobre el volumen de videos, tipo de metraje o referentes..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:border-brand-500 focus:outline-none"></textarea>
+                        </div>
+
+                        <div id="form-error" class="hidden text-red-400 text-xs font-semibold">Por favor completa todos los campos requeridos correctamente.</div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-base hover:scale-[1.01] transition flex items-center justify-center gap-3 shadow-xl shadow-emerald-950/50">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Enviar Consulta por WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="trayectoria" class="py-24 relative" aria-labelledby="trajectory-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mb-12">
+                    <span class="text-brand-accent font-semibold text-sm uppercase tracking-wider">Trayectoria Profesional</span>
+                    <h2 id="trajectory-heading" class="font-display text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6">
+                        +12 Años Dominando el Arte Audiovisual
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Editor senior y productor audiovisual para marcas internacionales, agencias digitales y educación en línea. Especializado en edición, motion graphics, corrección de color y post-producción para YouTube, anuncios, e-learning y broadcast. Trabajo remoto con clientes de Estados Unidos, Canadá y el Reino Unido, en inglés y español.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-16">
+                    <div class="relative border-l-2 border-slate-800 pl-6 pb-10 h-full">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-slate-950"></div>
+                        <span class="text-xs font-bold text-brand-accent">2015 - Presente</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Editor de Video y Productor Freelance</h3>
+                        <p class="text-slate-400 text-sm mt-1">Upwork. Post-producción integral para más de 10 clientes internacionales en automotriz, finanzas, salud, educación y comercio electrónico. Anuncios bilingües para redes, Facebook Ads, CTV y retargeting, con contratos recurrentes de 2 a 3 años.</p>
+                        <p class="text-slate-400 text-sm mt-2">YouTube semanal de formato largo para una marca de coaching financiero dirigida a audiencias latinas en Estados Unidos. Videos de capacitación en seguridad con pantalla verde, croma y texto en pantalla. Motion graphics, intros y automatizaciones de flujo en DaVinci Resolve para PRACC.COM.</p>
+                    </div>
+                    <div class="relative border-l-2 border-slate-800 pl-6 pb-10 h-full">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                        <span class="text-xs font-bold text-slate-400">2020 - 2021</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Editor de Redes, Star Loan</h3>
+                        <p class="text-slate-400 text-sm mt-1">Star Loan Acceptance Center. Piezas mensuales en inglés y español para Facebook Ads, CTV y retargeting.</p>
+                    </div>
+                    <div class="relative border-l-2 border-slate-800 pl-6 pb-10 h-full">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                        <span class="text-xs font-bold text-slate-400">2021 - 2023</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Editor de Video Educativo, IGS</h3>
+                        <p class="text-slate-400 text-sm mt-1">International Gem Society, en remoto. Post-producción completa de cursos de gemología, joyería y demostraciones de taller para el sitio web y el canal de YouTube.</p>
+                        <p class="text-slate-400 text-sm mt-2">Procesos de artesanos, consejos de herramientas y lecciones paso a paso, con una imagen de marca consistente en toda la biblioteca de e-learning.</p>
+                    </div>
+                    <div class="relative border-l-2 border-slate-800 pl-6 pb-10 h-full">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                        <span class="text-xs font-bold text-slate-400">2022 - 2023</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Editor de Redes y Publicidad</h3>
+                        <p class="text-slate-400 text-sm mt-1">OffleaseOnly.com y CarVision Mitsubishi. Anuncios bilingües en inglés y español para Facebook, CTV y retargeting, pensados para reconocimiento de marca, leads y ventas.</p>
+                    </div>
+                    <div class="relative border-l-2 border-slate-800 pl-6 pb-10 h-full">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                        <span class="text-xs font-bold text-slate-400">2022 - 2023</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Editor de Contenido para YouTube</h3>
+                        <p class="text-slate-400 text-sm mt-1">Craig Penny Chiropractic y Building the Elite. Videos de presentación quiropráctica y testimonios de pacientes para YouTube e Instagram. Tutoriales de fitness centrados en postura y rendimiento deportivo.</p>
+                    </div>
+                    <div class="relative border-l-2 border-slate-800 pl-6 h-full">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                        <span class="text-xs font-bold text-slate-400">2022 - 2023</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Editor de YouTube de Historia en Español</h3>
+                        <p class="text-slate-400 text-sm mt-1">Cliente confidencial. Adaptaciones al español de un canal de historia en inglés ya monetizado: montaje de clips, transiciones, After Effects, música y texto en pantalla, con entrega en 48 horas.</p>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-xs leading-relaxed mt-8">
+                    Título de asociado en Producción Audiovisual Integral, Mediax Gente de Medios, Venezuela (2011-2012). Usuario certificado de DaVinci Resolve, Blackmagic Design (2024). After Effects para post-producción y After Effects CC Digital Animator, Crehana (2019). Español nativo. Inglés C1, EF SET.
+                </p>
+
+                <div class="glass-card rounded-3xl p-8 border-slate-800 mt-16">
+                    <span class="text-emerald-400 font-semibold text-sm uppercase tracking-wider">Stack Tecnológico</span>
+                    <h3 class="font-display text-2xl font-bold text-white mt-2 mb-6">Herramientas que Domino</h3>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center gap-3 min-w-0">
+                            <i class="fa-solid fa-layer-group text-blue-400 text-2xl shrink-0"></i>
+                            <h4 class="font-bold text-white text-sm">After Effects</h4>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center gap-3 min-w-0">
+                            <i class="fa-solid fa-palette text-amber-400 text-2xl shrink-0"></i>
+                            <h4 class="font-bold text-white text-sm">DaVinci Resolve</h4>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center gap-3 min-w-0">
+                            <i class="fa-solid fa-robot text-teal-400 text-2xl shrink-0"></i>
+                            <h4 class="font-bold text-white text-sm">Flujo de IA</h4>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center gap-3 min-w-0">
+                            <i class="fa-solid fa-diagram-project text-purple-400 text-2xl shrink-0"></i>
+                            <h4 class="font-bold text-white text-sm">ComfyUI</h4>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center gap-3 min-w-0">
+                            <i class="fa-solid fa-wand-magic-sparkles text-pink-400 text-2xl shrink-0"></i>
+                            <h4 class="font-bold text-white text-sm">Higgsfield AI</h4>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center gap-3 min-w-0">
+                            <i class="fa-solid fa-user-astronaut text-emerald-400 text-2xl shrink-0"></i>
+                            <h4 class="font-bold text-white text-sm">Hermes Agent</h4>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-4 rounded-2xl bg-slate-900/80 border border-brand-500/30 flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-brand-600/30 text-brand-accent flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Flujo asíncrono ágil utilizando Frame.io para anotaciones segundo a segundo sobre el video y Google Drive / Frame.io Transfer para envíos pesados en 4K sin pérdida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="metodologia" class="py-20 bg-slate-900/60 border-t border-slate-800/80" aria-labelledby="workflow-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-accent font-semibold text-sm uppercase tracking-wider">Colaboración Sin Fricción</span>
+                    <h2 id="workflow-heading" class="font-display text-3xl sm:text-4xl font-extrabold text-white mt-2">Cómo Trabajamos de Forma Remota en 4 Pasos</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="glass-card p-6 rounded-2xl relative">
+                        <span class="text-4xl font-black text-slate-800 absolute top-4 right-4">01</span>
+                        <div class="w-10 h-10 rounded-lg bg-brand-600/30 text-brand-accent flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <h3 class="font-bold text-white text-lg">1. Briefing y Envío</h3>
+                        <p class="text-slate-400 text-sm mt-2">Subes tu metraje bruto a Google Drive, Dropbox o Frame.io con el brief o videos de referencia.</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl relative">
+                        <span class="text-4xl font-black text-slate-800 absolute top-4 right-4">02</span>
+                        <div class="w-10 h-10 rounded-lg bg-emerald-600/30 text-emerald-400 flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-scissors"></i></div>
+                        <h3 class="font-bold text-white text-lg">2. Edición y Ritmo</h3>
+                        <p class="text-slate-400 text-sm mt-2">Elimino pausas, construyo el ritmo narrativo y diseño ganchos visuales iniciales.</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl relative">
+                        <span class="text-4xl font-black text-slate-800 absolute top-4 right-4">03</span>
+                        <div class="w-10 h-10 rounded-lg bg-purple-600/30 text-purple-400 flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3 class="font-bold text-white text-lg">3. Pulido, Color y Audio</h3>
+                        <p class="text-slate-400 text-sm mt-2">Incorporo motion graphics, subtítulos dinámicos, etalonaje de color DaVinci y diseño de sonido SFX.</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl relative">
+                        <span class="text-4xl font-black text-slate-800 absolute top-4 right-4">04</span>
+                        <div class="w-10 h-10 rounded-lg bg-pink-600/30 text-pink-400 flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-circle-check"></i></div>
+                        <h3 class="font-bold text-white text-lg">4. Revisión y Entrega</h3>
+                        <p class="text-slate-400 text-sm mt-2">Revisas el borrador en línea en Frame.io, dejas comentarios en código de tiempo y recibes el master final.</p>
+                    </div>
+                </div>
+
+                <!-- Nota de métodos de pago -->
+                <p class="text-center text-xs text-slate-500 mt-8">
+                    <!-- MÉTODOS DE PAGO EDITABLES -->
+                    Pagos procesados de forma segura mediante Wise, Transferencia Bancaria Internacional o PayPal. Facturación disponible para empresas.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-slate-950 border-t border-slate-800/80" aria-labelledby="testimonials-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-emerald-400 font-semibold text-sm uppercase tracking-wider">Opiniones de Clientes</span>
+                    <h2 id="testimonials-heading" class="font-display text-3xl font-extrabold text-white mt-2">Lo que Dicen Quienes Trabajan Conmigo</h2>
+                </div>
+
+                <!-- EJEMPLO DE TARJETAS DE TESTIMONIOS: REEMPLAZAR CON RESEÑAS REALES -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="glass-card p-6 rounded-2xl relative">
+                        <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            <!-- EJEMPLO: REEMPLAZAR CON RESEÑA REAL -->
+                            "Germán transformó por completo las curvas de retención de nuestro canal de YouTube. El dinamismo y el diseño de sonido llevaron nuestros videos a romper récords de visitas."
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 font-bold">JD</div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Jason D.</p>
+                                <p class="text-xs text-slate-500">Creador de YouTube Tech (EE.UU.)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl relative">
+                        <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            <!-- EJEMPLO: REEMPLAZAR CON RESEÑA REAL -->
+                            "El trabajo asíncrono con Motionzek es impecable. Las anotaciones en Frame.io hacen que las aprobaciones de video sean rápidas sin perder tiempo en reuniones."
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 font-bold">MS</div>
+                            <div>
+                                <p class="text-sm font-bold text-white">María S.</p>
+                                <p class="text-xs text-slate-500">Líder Creativa, Growth Ads (Reino Unido)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl relative">
+                        <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            <!-- EJEMPLO: REEMPLAZAR CON RESEÑA REAL -->
+                            "El CTR de nuestras campañas de publicidad pasó de 1.2% a 3.8% tras las variaciones de ganchos que editó Germán. 100% recomendado."
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 font-bold">AL</div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Alex L.</p>
+                                <p class="text-xs text-slate-500">Director E-Commerce (Canadá)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-slate-900/40 border-t border-slate-800/80" aria-labelledby="faq-heading">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-brand-accent font-semibold text-sm uppercase tracking-wider">Preguntas Frecuentes</span>
+                    <h2 id="faq-heading" class="font-display text-3xl sm:text-4xl font-extrabold text-white mt-2">Resuelve tus Dudas sobre el Servicio</h2>
+                </div>
+
+                <div class="space-y-4">
+                    
+                    <!-- FAQ 1 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿Cuánto cuesta editar un video?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                El precio de editar un video depende de la duración final, dinamismo, cantidad de metraje bruto y complejidad de motion graphics. Los proyectos individuales inician desde $250 USD y los paquetes mensuales desde $850 USD.
+                            </p>
+                            <p>
+                                Cada presupuesto se calcula de forma transparente tras revisar tu material, fechas de entrega requeridas y videos de referencia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿Qué es la post-producción audiovisual?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                La post-producción es la etapa integral donde se transforma el material grabado en un video final pulido. Incluye montaje narrativo, edición de sonido, corrección de color, gráficos animados, efectos visuales y renderizado master.
+                            </p>
+                            <p>
+                                Garantiza que el video tenga dinamismo, coherencia de marca y calidad técnica para plataformas digitales o televisión.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿Qué diferencia hay entre edición de video y motion graphics?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                La edición de video se enfoca en cortar, ensamblar y dar ritmo a tomas grabadas con cámara. Los motion graphics consisten en diseñar y animar elementos gráficos 2D/3D desde cero, como títulos, logotipos o explicaciones ilustradas.
+                            </p>
+                            <p>
+                                En Motionzek combino ambas disciplinas para enriquecer el metraje con recursos visuales que eleven la producción.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿Cuánto tarda un video para YouTube?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                Un video estándar para YouTube de 10 a 15 minutos suele entregarse en su primer borrador entre 3 y 5 días laborables. Ediciones documentales complejas con amplio B-roll requieren de 5 a 7 días.
+                            </p>
+                            <p>
+                                Se pueden coordinar entregas prioritarias según la disponibilidad del estudio.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿Qué material necesito enviar para comenzar?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                Debes enviar el metraje bruto en video, archivos de audio independiente si aplica, brief o escaleta del proyecto, kit de marca (logo, fuentes, colores) y enlaces de videos de referencia.
+                            </p>
+                            <p>
+                                Los archivos pesados se comparten fácilmente mediante enlaces a Google Drive, Dropbox o Frame.io.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿Cuántas revisiones incluye el trabajo?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                Los proyectos puntuales incluyen 2 rondas completas de revisión. Los paquetes recurrentes incluyen ajustes ilimitados para perfeccionar ritmos y subtítulos.
+                            </p>
+                            <p>
+                                Todas las revisiones se realizan en línea con Frame.io mediante comentarios con código de tiempo en el propio reproductor.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿Se puede contratar desde otro país?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                Sí, trabajo 100% de forma remota con clientes de Estados Unidos, Europa, Latinoamérica y resto del mundo. Todo el proceso de comunicación, envío y revisiones es digital.
+                            </p>
+                            <p>
+                                El flujo asíncrono permite avanzar sin necesidad de reuniones continuas en directo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿Con qué zonas horarias se trabaja?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                Desde mi ubicación en Manta, Ecuador (zona horaria ECT / EST), adapto los horarios de respuesta a la jornada laboral de EE.UU. (EST, CST, PST) y Europa (CET, GMT).
+                            </p>
+                            <p>
+                                Mantengo comunicación constante por WhatsApp o Slack.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 9 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿En qué idiomas se atiende?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                Atiendo y edito de forma nativa/bilingüe tanto en español como en inglés, incluyendo titulación, locuciones y subtitulado dinámico.
+                            </p>
+                            <p>
+                                También puedo generar archivos de subtítulos (.srt) multi-idioma para proyectos globales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 10 -->
+                    <div class="glass-card rounded-2xl border-slate-800 overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none" aria-expanded="false">
+                            <span class="font-bold text-white text-base sm:text-lg">¿Cómo se coordinan pagos y entregas a distancia?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 pt-4">
+                            <p class="font-semibold text-white mb-2">
+                                Los pagos se efectúan en USD mediante Wise, transferencia bancaria internacional o PayPal, adjuntando factura comercial. El esquema estándar es 50% de anticipo y 50% al aprobar el borrador final.
+                            </p>
+                            <p>
+                                Los archivos finales master se entregan en alta resolución 4K sin compresión en enlaces de la nube.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 bg-slate-950 border-t border-slate-800 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
+                <div class="flex items-center gap-3">
+                    <span class="font-display text-xl font-bold text-white tracking-wider">MOTIONZEK</span>
+                    <span class="text-xs text-slate-500">| Germán Carrillo • Post-Productor Senior</span>
+                </div>
+                <div class="flex items-center gap-6 text-slate-400">
+                    <a id="footer-insta" href="https://instagram.com/motionzek" target="_blank" rel="noopener" aria-label="Perfil de Instagram" class="hover:text-white transition"><i class="fa-brands fa-instagram text-lg"></i></a>
+                    <a id="footer-tiktok" href="https://tiktok.com/@motionzek" target="_blank" rel="noopener" aria-label="Perfil de TikTok" class="hover:text-white transition"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                    <a id="footer-yt" href="https://youtube.com/@motionzek" target="_blank" rel="noopener" aria-label="Canal de YouTube" class="hover:text-white transition"><i class="fa-brands fa-youtube text-lg"></i></a>
+                    <a id="footer-wsp" href="https://wa.me/593963376306" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp" class="hover:text-emerald-400 transition"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-xs text-slate-500">
+                <div class="text-center sm:text-left">
+                    <p>© <span id="footer-year">2026</span> Motionzek. Todos los derechos reservados. Ciudad Base: Manta, Ecuador • Servicio Remoto Global.</p>
+                    <p class="mt-2 text-slate-600">Diseño web: <a href="https://bellarulox.com" target="_blank" rel="noopener">Bellarulox</a> · <a href="https://sitios.bellarulox.com" target="_blank" rel="noopener">Sitios Bellarulox</a></p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span>Actualizado: Octubre 2026</span>
+                    <a href="index.html" hreflang="en" lang="en" class="text-brand-accent hover:underline">Cambiar a Inglés (EN)</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a id="floating-wsp" href="https://wa.me/593963376306" target="_blank" rel="noopener" class="group flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110" aria-label="Contactar a Germán Carrillo por WhatsApp">
+            <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-red-500 rounded-full border-2 border-slate-950 animate-bounce"></span>
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap font-bold text-xs">Chatear por WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Modal de Video -->
+    <div id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md hidden">
+        <div class="glass-card max-w-2xl w-full rounded-3xl p-6 sm:p-8 relative border-slate-700 shadow-2xl">
+            <button onclick="closeVideoModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl p-2" aria-label="Cerrar modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <span id="modalCategory" class="inline-block bg-brand-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">Categoría</span>
+            <h3 id="modalTitle" class="font-display text-2xl font-bold text-white mb-3">Título del Proyecto</h3>
+
+            <!-- Contenedor del Reproductor -->
+            <div id="videoEmbedContainer" class="relative aspect-video rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden my-4">
+            </div>
+
+            <p id="modalDescription" class="text-slate-300 text-sm leading-relaxed mb-6">Descripción detallada del trabajo...</p>
+
+            <div class="flex flex-col sm:flex-row justify-end gap-3 pt-4 border-t border-slate-800">
+                <button onclick="closeVideoModal()" class="px-5 py-2.5 rounded-xl text-slate-400 hover:text-white text-sm font-semibold">Cerrar</button>
+                <a id="modalWspBtn" href="https://wa.me/593963376306" target="_blank" rel="noopener" class="px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-bold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i><span>Cotizar Proyecto Similar</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* Constantes Editables */
+        const WHATSAPP = "593963376306";
+        const NOMBRE = "Germán Carrillo";
+        const MARCA = "Motionzek";
+        const CIUDAD_BASE = "Manta, Ecuador";
+        const INSTAGRAM = "https://instagram.com/motionzek";
+        const TIKTOK = "https://tiktok.com/@motionzek";
+        const YOUTUBE = "https://youtube.com/@motionzek";
+        const URL_SITIO_EN = "https://DOMINIO-DEL-CLIENTE.com/";
+        const URL_SITIO_ES = "https://DOMINIO-DEL-CLIENTE.com/es-index.html";
+
+        function getWspUrl(messageText) {
+            return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(messageText)}`;
+        }
+
+        function applyPublicUrls() {
+            const en = URL_SITIO_EN;
+            const es = URL_SITIO_ES;
+            const origin = en.endsWith("/") ? en.slice(0, -1) : en;
+            const pageUrl = document.documentElement.lang === "es" ? es : en;
+            const canonical = document.querySelector('link[rel="canonical"]');
+            if (canonical) canonical.setAttribute("href", pageUrl);
+            document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => {
+                const code = link.getAttribute("hreflang");
+                link.setAttribute("href", code === "es" ? es : en);
+            });
+            const ogUrl = document.querySelector('meta[property="og:url"]');
+            if (ogUrl) ogUrl.setAttribute("content", pageUrl);
+            const imageUrl = origin + "/og-image.jpg";
+            const ogImage = document.querySelector('meta[property="og:image"]');
+            if (ogImage) ogImage.setAttribute("content", imageUrl);
+            const twImage = document.querySelector('meta[name="twitter:image"]');
+            if (twImage) twImage.setAttribute("content", imageUrl);
+            const ld = document.querySelector('script[type="application/ld+json"]');
+            if (ld) {
+                let json = ld.textContent.replaceAll("593963376306", WHATSAPP);
+                if (json.includes("DOMINIO-DEL-CLIENTE.com")) {
+                    const root = en.endsWith("/") ? en : en + "/";
+                    json = json
+                        .replaceAll("https://DOMINIO-DEL-CLIENTE.com/es-index.html", es)
+                        .replaceAll("https://DOMINIO-DEL-CLIENTE.com/", root);
+                }
+                ld.textContent = json;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyPublicUrls();
+            document.getElementById('footer-year').textContent = String(new Date().getFullYear());
+            document.getElementById('nav-wsp-btn').href = getWspUrl("Hola Germán, quisiera agendar una consulta para servicios de edición de video para mi marca.");
+            document.getElementById('mobile-wsp-btn').href = getWspUrl("Hola Germán! Te escribo desde tu sitio web Motionzek para consultar sobre post-producción.");
+            document.getElementById('hero-quote-btn').href = getWspUrl("Hola Germán! Quisiera cotizar un proyecto audiovisual para mi negocio.");
+            document.getElementById('footer-wsp').href = getWspUrl("Hola Germán, vi tu sitio web Motionzek.com y quiero consultar.");
+            document.getElementById('floating-wsp').href = getWspUrl("Hola Germán! Te escribo desde el botón flotante para consultar sobre edición de video.");
+        });
+
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        function openWspWithContext(serviceName) {
+            const msg = `Hola Germán! Me interesa tu proyecto/paquete "${serviceName}". ¿Podrías darme detalles y costos?`;
+            window.open(getWspUrl(msg), '_blank');
+        }
+
+        function filterPortfolio(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.classList.add('bg-brand-600', 'text-white', 'shadow-glow');
+                    btn.classList.remove('bg-slate-900', 'text-slate-400');
+                } else {
+                    btn.classList.remove('bg-brand-600', 'text-white', 'shadow-glow');
+                    btn.classList.add('bg-slate-900', 'text-slate-400');
+                }
+            });
+
+            document.querySelectorAll('.portfolio-item').forEach(item => {
+                const cats = item.getAttribute('data-category').split(' ');
+                if (category === 'all' || cats.includes(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+            document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+            document.querySelectorAll('#faq button i').forEach(i => i.style.transform = 'rotate(0deg)');
+            document.querySelectorAll('#faq button').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+            if (!isExpanded) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+                button.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        function openVideoModal(title, description, videoId, provider) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('modalCategory').innerText = "VISTA PREVIA DE TRABAJO";
+
+            const container = document.getElementById('videoEmbedContainer');
+            if (provider === 'youtube') {
+                container.innerHTML = `<iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1" title="${title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            } else {
+                container.innerHTML = `<div class="p-8 text-center"><p class="text-slate-400 text-sm">Reproductor para ID: ${videoId}</p></div>`;
+            }
+
+            document.getElementById('modalWspBtn').href = getWspUrl(`Hola Germán! Vi tu proyecto "${title}" y quiero cotizar algo similar.`);
+            document.getElementById('videoModal').classList.remove('hidden');
+        }
+
+        function closeVideoModal() {
+            document.getElementById('videoModal').classList.add('hidden');
+            document.getElementById('videoEmbedContainer').innerHTML = '';
+        }
+
+        document.getElementById('videoModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('videoModal')) closeVideoModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !document.getElementById('videoModal').classList.contains('hidden')) {
+                closeVideoModal();
+            }
+        });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value.trim();
+            const country = document.getElementById('form-country').value.trim();
+            const service = document.getElementById('form-service').value;
+            const timezone = document.getElementById('form-timezone').value.trim();
+            const message = document.getElementById('form-message').value.trim();
+
+            if (!name || !country || !service || !timezone) {
+                document.getElementById('form-error').classList.remove('hidden');
+                return;
+            }
+
+            document.getElementById('form-error').classList.add('hidden');
+
+            const text = `Hola Germán! Mi nombre es ${name} desde ${country}. Me interesa el servicio de "${service}". Mi zona horaria es ${timezone}.${message ? ` Nota: ${message}` : ''}`;
+            window.open(getWspUrl(text), '_blank');
+        }
+    </script>
+</body>
+</html>
